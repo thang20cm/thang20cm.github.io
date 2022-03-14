@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        }
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        ul{
+            list-style-type:none;
+            justify-content: center;
+        }
+        nav{
+            background-color:#66806A ;
+        }
+        nav #main-menu li a{
+            color:#FFF;
+            text-decoration: none;
+            display: block;
+            padding:8px 25px;
+            font-size: 15px;
+            }
+        #main-menu{
+            display: flex;
+        }
+        nav #main-menu li:hover a{
+            color: #ED8D8D;
+            transition: all 0.3s;
+        }
+        .toggle{
+            display:none;
+            background-color: #66806A;
+            color: #FFF;
+            text-align: right;
+            padding:10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .search-box{
+           margin-top:7px;
+           
+           position: relative;
+          transition: all 0.5s ease;
+        }
+        .search-box-input{
+            position: relative;
+            border-radius: 5px;
+            outline:none;
+            border:none;
+            height: 20px;
+            font-size: 15px;
+            color:#66806A ;
+            font-weight: bold;
+            
+        }
+      .search-box-btn{
+          width:20px;
+          height:20px;
+          border: none;
+          outline:none;
+          border-radius: 5px;
+          
+      }
+        @media screen and (max-width:768px){
+            #main-menu{
+                flex-direction: column;
+                text-align: center;
+            }
+            .toggle{
+                display: block;
+            }
+            nav{
+                display: none;
+            }
+        }
+        #main-mid{
+            display: flex;
+            padding:10px;
+        }
+        #main-mid li a{
+            text-decoration: none;
+        }
+        #main-mid span{
+            padding:10px;
+        }
+        
+        
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('nav').slideToggle();
+            })
+        });
+    </script>
+    <div class="wrapper">
+        <div class="header" id="myHeader">
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav>
+                <ul id="main-menu">
+                    <li>
+                        <a href="index.html"><i class="fa-brands fa-apple"></i></a>
+                    </li>
+                    <li>
+                        <a href="Mac.html">Mac</a>
+                    </li>
+                    <li>
+                        <a href="">iPad</a>
+                    </li>
+                    <li>
+                        <a href="">iPhone</a>
+                    </li>
+                    <li>
+                        <a href="">Watch</a>
+                    </li>
+                    <li>
+                        <a href="">AirPods</a>
+                    </li>
+                    <li>
+                        <a href="">TV & Home</a>
+                    </li>
+                    <li>
+                        <a href="">Only on Apple</a>
+                    </li>
+                    <li>
+                        <a href="">Support</a>
+                    </li>
+                    <li>
+                        <a href="">Where to Buy</a>
+                    </li>
+                            <div class="search-box">
+                                <input class="search-box-input" type="text" placeholder="search something...">
+                                <button class="search-box-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>                  
+                </ul>
+            </nav>
+            <div class="mid">
+                <ul id="main-mid">
+                    <li>
+                        <a class="mbpro" href="">
+                            <figure id="macbookpro">
+                                <img src="MBpro.png" width="70">
+                            </figure>
+                            <span class="mbproo" role="text">MacBook Air
+                                
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="mbpro" href="">
+                            <figure id="macbookpro">
+                                <img src="MBpro.png" width="70">
+                            </figure>
+                            <span class="chapter-nav-label" role="text">MacBook Air
+                                
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="mbpro" href="">
+                            <figure id="macbookpro">
+                                <img src="MBpro.png" width="70">
+                            </figure>
+                            <span class="chapter-nav-label" role="text">MacBook Air
+                                
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="mbpro" href="">
+                            <figure id="macbookpro">
+                                <img src="MBpro.png" width="70">
+                            </figure>
+                            <span class="chapter-nav-label" role="text">MacBook Air
+                                
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="mbpro" href="">
+                            <figure id="macbookpro">
+                                <img src="MBpro.png" width="70">
+                            </figure>
+                            <span class="chapter-nav-label" role="text">MacBook Air
+                                
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="mbpro" href="">
+                            <figure id="macbookpro">
+                                <img src="MBpro.png" width="70">
+                            </figure>
+                            <span class="chapter-nav-label" role="text">MacBook Air
+                                
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="mbpro" href="">
+                            <figure id="macbookpro">
+                                <img src="MBpro.png" width="70">
+                            </figure>
+                            <span class="chapter-nav-label" role="text">MacBook Air
+                                
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="mbpro" href="">
+                            <figure id="macbookpro">
+                                <img src="MBpro.png" width="70">
+                            </figure>
+                            <span class="chapter-nav-label" role="text">MacBook Air
+                                
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
